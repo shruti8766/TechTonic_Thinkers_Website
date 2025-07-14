@@ -143,11 +143,12 @@ nav a:hover {
 .student-image {
   width: 210px;
   height: 260px;
-  background: url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=facearea&w=400&h=500&facepad=3') center/cover no-repeat;
   border-radius: 22px;
   box-shadow: 0 6px 32px rgba(106,0,244,0.10);
+  object-fit: cover;
   position: relative;
   z-index: 2;
+  display: block;
 }
 
 .shape {
@@ -290,6 +291,45 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Prep Section */
+.prep-section {
+  background: #f7f5f2;
+  padding: 2.5rem 10vw;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(106,0,244,0.03);
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.prep-section h2 {
+  color: #6a00f4;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.prep-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.3rem 0;
+}
+.prep-links li {
+  margin: 0.7rem 0;
+}
+.prep-links a {
+  color: #3ec6c1;
+  font-weight: 600;
+  font-size: 1.08rem;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+.prep-links a:hover {
+  color: #ff61a6;
+  text-decoration: underline;
+}
+.prep-note {
+  color: #444;
+  font-size: 1.08rem;
+  margin-top: 1.2rem;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -314,7 +354,8 @@ footer {
   }
   .about-section,
   .join-section,
-  .events-section {
+  .events-section,
+  .prep-section {
     padding: 2rem 4vw;
   }
 }
@@ -336,7 +377,8 @@ footer {
   }
   .about-section,
   .join-section,
-  .events-section {
+  .events-section,
+  .prep-section {
     padding: 1.2rem 2vw;
     margin: 1.5rem 0;
   }
@@ -388,66 +430,18 @@ body.dark-theme .join-section .contact-info {
 body.dark-theme .join-section .contact-info a {
   color: #ff61a6;
 }
-body.dark-theme .events-section {
+body.dark-theme .events-section,
+body.dark-theme .prep-section {
   background: #18151d;
   color: #fff;
   box-shadow: 0 2px 12px rgba(62,198,193,0.10);
 }
-body.dark-theme .events-section h2 {
+body.dark-theme .events-section h2,
+body.dark-theme .prep-section h2 {
   color: #3ec6c1;
 }
 body.dark-theme .events-coming-soon {
   color: #ff61a6;
-}
-body.dark-theme footer {
-  background: #111;
-  color: #aaa;
-}
-.prep-section {
-  background: #f7f5f2;
-  padding: 2.5rem 10vw;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(106,0,244,0.03);
-  margin: 2.5rem 0;
-  text-align: center;
-}
-.prep-section h2 {
-  color: #6a00f4;
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-}
-.prep-links {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.3rem 0;
-}
-.prep-links li {
-  margin: 0.7rem 0;
-}
-.prep-links a {
-  color: #3ec6c1;
-  font-weight: 600;
-  font-size: 1.08rem;
-  text-decoration: none;
-  transition: color 0.18s;
-}
-.prep-links a:hover {
-  color: #ff61a6;
-  text-decoration: underline;
-}
-.prep-note {
-  color: #444;
-  font-size: 1.08rem;
-  margin-top: 1.2rem;
-}
-
-body.dark-theme .prep-section {
-  background: #18151d;
-  color: #eee;
-  box-shadow: 0 2px 12px rgba(62,198,193,0.10);
-}
-body.dark-theme .prep-section h2 {
-  color: #3ec6c1;
 }
 body.dark-theme .prep-links a {
   color: #6a00f4;
@@ -457,4 +451,8 @@ body.dark-theme .prep-links a:hover {
 }
 body.dark-theme .prep-note {
   color: #bbb;
+}
+body.dark-theme footer {
+  background: #111;
+  color: #aaa;
 }
