@@ -169,6 +169,47 @@ nav a:hover {
   opacity: 0.13;
 }
 
+/* About Section */
+.about-section {
+  background: #fff;
+  padding: 3rem 10vw;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  margin: 3rem 0;
+}
+.about-section h2 {
+  color: #ff61a6;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.about-section p {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.about-highlights {
+  list-style: square inside;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+}
+.about-highlights li {
+  margin-bottom: 0.7rem;
+  font-size: 1.02rem;
+}
+.about-quote {
+  font-style: italic;
+  color: #6a00f4;
+  margin-bottom: 1.2rem;
+  border-left: 4px solid #ff61a6;
+  padding-left: 1rem;
+}
+.about-cta {
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: #3ec6c1;
+}
+
+/* Footer */
 footer {
   text-align: center;
   background: #faf9f9;
@@ -190,6 +231,9 @@ footer {
     width: 210px;
     height: 260px;
   }
+  .about-section {
+    padding: 2rem 4vw;
+  }
 }
 
 @media (max-width: 600px) {
@@ -207,9 +251,13 @@ footer {
   .hero {
     padding: 2.2rem 2vw 1.5rem 2vw;
   }
+  .about-section {
+    padding: 1.2rem 2vw;
+    margin: 1.5rem 0;
+  }
 }
 
-/* Light/Dark Theme */
+/* Dark Theme */
 body.dark-theme {
   --main-bg: #0e0e0e;
   --main-text: #fff;
@@ -222,6 +270,23 @@ body.dark-theme {
 
 body.dark-theme .hero {
   background: #18151d;
+}
+
+body.dark-theme .about-section {
+  background: #18151d;
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+body.dark-theme .about-section p,
+body.dark-theme .about-highlights li {
+  color: #eee;
+}
+body.dark-theme .about-quote {
+  color: #c8a2ff;
+  border-left-color: #ff61a6;
+}
+body.dark-theme .about-cta {
+  color: #3ec6c1;
 }
 
 body.dark-theme footer {
