@@ -5,74 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CYBRO-X - Your Coding Club</title>
   <meta name="description" content="Welcome to CYBRO-X, the first-ever coding club in our college!" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1 class="logo">
-      <span class="pink">C</span><span class="purple">Y</span><span class="purple">B</span><span class="purple">R</span><span class="purple">O</span><span class="purple"> - </span><span class="pink">✘</span>
-    </h1>
-    <p class="tagline">We debug together, celebrate every ‘Hello World’, and occasionally roast our own code.</p>
-    <button id="themeToggle" class="theme-toggle">☀️</button>
+    <div class="logo">
+      <span class="pink">C</span><span class="purple">Y</span><span class="purple">B</span><span class="purple">R</span><span class="purple">O</span><span class="purple">-</span><span class="pink">✘</span>
+      <span class="club-name">CYBRO-X Coding Club</span>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#join">Join</a>
+      <a href="#prep">Prep</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark theme">🌚</button>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#join">Join Us</a></li>
-      <li><a href="#prep">Prep</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p><strong>Welcome to Cybro-X — the first-ever coding club in our college!</strong></p>
-      <ul>
-        <li><strong>Trailblazers of Tech:</strong> Being the college’s very first coding club...</li>
-        <li><strong>Hands-On Experience:</strong> From beginner-friendly workshops to coding challenges...</li>
-        <li><strong>Connect & Collaborate:</strong> Network with tech enthusiasts, mentors...</li>
-        <li><strong>Innovate & Compete:</strong> Hackathons, contests, creative projects...</li>
-        <li><strong>Supportive & Inclusive:</strong> From beginners to pros, we got you.</li>
-      </ul>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Develop a Passion<br>for <span class="accent">Learning</span>...</h1>
+        <p class="hero-desc">
+          Welcome to <strong>CYBRO-X</strong> — the first-ever coding club in our college!  
+          We debug together, celebrate every ‘Hello World’, and occasionally roast our own code.
+        </p>
+        <a href="#join" class="cta-btn">Join Now</a>
+      </div>
+      <div class="hero-right">
+        <div class="student-image"></div>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+      </div>
     </section>
-
-    <section id="events">
-      <h2>Upcoming Events</h2>
-      <p>The suspense is real. What’s next? Only the coding gods know… for now.</p>
-    </section>
-
-    <section id="join">
-      <h2>Join Our Club</h2>
-      <p>🚀 Bring your college ID</p>
-      <p>💸 Free entry, always</p>
-      <p>✍️ <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScvccBhrWKTK2RuxG20JRduDVYD5aPSvcbdzDqQLNVE3tn6QQ/viewform" target="_blank">Click to Join</a></p>
-    </section>
-
-    <section id="prep">
-      <h2>💼 Interview Prep Zone</h2>
-      <ul class="prep-links">
-        <li><a href="https://www.techinterviewhandbook.org/grind75/" target="_blank">Grind 75 Challenge</a></li>
-        <li><a href="https://leetcode.com/study-plan/leetcode-75/" target="_blank">LeetCode 75 Plan</a></li>
-        <li><a href="https://neetcode.io/" target="_blank">NeetCode Patterns</a></li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:shrutigaikwad8766@gmail.com">shrutigaikwad8766@gmail.com</a></p>
-      <p>Instagram: @CybroXOfficial (Coming soon)</p>
-    </section>
+    <!-- Add your other sections below as needed -->
   </main>
-
   <footer>
     <p>&copy; 2025 CYBRO-X Coding Club. All rights reserved.</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
