@@ -323,3 +323,78 @@ body.dark-theme .events-section h2 {
 body.dark-theme .events-coming-soon {
   color: #ff61a6;
 }
+.join-section {
+  background: #fff;
+  padding: 3rem 10vw;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.join-section h2 {
+  color: #ff61a6;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.join-section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.join-section .cta-btn {
+  background: #3ec6c1;
+  color: #fff;
+  padding: 0.85rem 2.4rem;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(62,198,193,0.15);
+  text-decoration: none;
+  transition: background 0.18s;
+}
+
+.join-section .cta-btn:hover {
+  background: #2aa6a1;
+}
+
+.join-section .contact-info {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.join-section .contact-info a {
+  color: #ff61a6;
+  text-decoration: none;
+}
+
+.join-section .contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Dark theme support */
+body.dark-theme .join-section {
+  background: #18151d;
+  color: #eee;
+  box-shadow: 0 2px 16px rgba(62,198,193,0.12);
+}
+
+body.dark-theme .join-section .cta-btn {
+  background: #6a00f4;
+  box-shadow: 0 2px 8px rgba(106,0,244,0.3);
+}
+
+body.dark-theme .join-section .cta-btn:hover {
+  background: #3ec6c1;
+}
+
+body.dark-theme .join-section .contact-info {
+  color: #bbb;
+}
+
+body.dark-theme .join-section .contact-info a {
+  color: #ff61a6;
+}
