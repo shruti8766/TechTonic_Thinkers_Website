@@ -293,3 +293,33 @@ body.dark-theme footer {
   background: #111;
   color: #aaa;
 }
+.events-section {
+  background: #f7f5f2;
+  padding: 2.5rem 10vw;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(106,0,244,0.03);
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.events-section h2 {
+  color: #6a00f4;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.events-coming-soon {
+  font-size: 1.13rem;
+  color: #ff61a6;
+  font-weight: 600;
+  margin-top: 0.7rem;
+}
+body.dark-theme .events-section {
+  background: #18151d;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(62,198,193,0.10);
+}
+body.dark-theme .events-section h2 {
+  color: #3ec6c1;
+}
+body.dark-theme .events-coming-soon {
+  color: #ff61a6;
+}
