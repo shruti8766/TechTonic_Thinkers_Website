@@ -456,3 +456,19 @@ body.dark-theme footer {
   background: #111;
   color: #aaa;
 }
+.vcacs-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 90px;
+  opacity: 0.85;
+  z-index: 999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vcacs-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
