@@ -471,4 +471,10 @@ body.dark-theme footer {
   transform: scale(1.05);
   cursor: pointer;
 }
-
+.college-name {
+  font-size: 0.8rem;
+  color: #bbb;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2px;
+  display: block;
+}
