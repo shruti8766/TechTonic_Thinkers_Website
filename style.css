@@ -65,6 +65,7 @@ nav a {
 nav a:hover {
   color: var(--nav-link-hover);
 }
+
 .theme-toggle {
   background: none;
   border: none;
@@ -72,79 +73,6 @@ nav a:hover {
   cursor: pointer;
   color: var(--main-text);
   margin-left: 1.5rem;
-}
-
-/* -------- Dropdown Menu -------- */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropbtn {
-  background: none;
-  color: var(--nav-link);
-  font: inherit;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0;
-  transition: color 0.2s;
-}
-.dropbtn:hover { color: var(--nav-link-hover); }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 185px;
-  box-shadow: 0 3px 14px rgba(106,0,244,0.14);
-  z-index: 10;
-  border-radius: 10px;
-  overflow: hidden;
-
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-.dropdown-content a {
-  display: block;
-  color: #222;
-  padding: 12px 18px;
-  text-decoration: none;
-  transition: background 0.22s, color 0.22s;
-}
-.dropdown-content a:hover {
-  background-color: #f1eaff;
-  color: var(--accent2);
-}
-.dropdown:focus-within .dropdown-content,
-.dropdown:hover .dropdown-content {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.dropbtn:focus + .dropdown-content,
-.dropdown-content:focus-within {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-/* Dark mode for dropdown */
-body.dark-theme .dropdown-content {
-  background-color: #1f1f1f;
-}
-body.dark-theme .dropdown-content a {
-  color: #fff;
-}
-body.dark-theme .dropdown-content a:hover {
-  background-color: #2b2b2b;
-  color: var(--accent3);
 }
 
 /* --- Hero Section --- */
@@ -492,7 +420,6 @@ footer {
     padding: 1.2rem 2vw;
   }
   nav {
-    flex-direction: column;
     gap: 1.2rem;
   }
   .hero-left h1 {
@@ -505,24 +432,6 @@ footer {
   .cybrox-guide {
     padding: 1.2rem 2vw;
     margin: 1.5rem 0;
-  }
-  .dropdown-content {
-    position: static;
-    box-shadow: none;
-    background: none;
-    min-width: unset;
-    border-radius: 0;
-    padding-right: 10vw;
-    opacity: 1;
-    pointer-events: auto;
-    transform: none;
-    transition: none;
-    display: block;
-  }
-  .dropdown-content a {
-    padding: 10px 0;
-    background: none;
-    color: var(--nav-link);
   }
 }
 
